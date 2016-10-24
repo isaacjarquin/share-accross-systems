@@ -1,0 +1,37 @@
+# my aliases
+# ********************************************************************************
+
+# General
+
+alias be="bundle exec"
+alias subl="sublime"
+# --------------------------------------------------------------------------------
+
+# Applications
+
+alias recontracting="cd ~/sky/projects/mysky-recontracting"
+alias homepage="cd ~/sky/projects/mysky-homepage"
+alias mypackage="cd ~/sky/projects/my-package"
+alias registration="cd ~/sky/projects/mysky-registration"
+alias makethemost="cd ~/sky/projects/make-the-most"
+alias ether="cd ~/sky/projects/ether"
+alias developers="cd ~/sky/projects/developers-sky-com"
+alias plumbus="cd ~/sky/projects/plumbus"
+# --------------------------------------------------------------------------------
+
+# Services
+alias postgres start="pg_ctl -D /usr/local/var/postgres start -s -m fast"
+alias postgres stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+# --------------------------------------------------------------------------------
+
+# Git 
+
+alias gl1="git log --graph --abbrev-commit --decorate --date=relative --all"
+alias gl2="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+# --------------------------------------------------------------------------------
+
+# System
+
+alias memory="top -l 1 | grep PhysMem"
+alias cpu="top -l 1 | grep CPU"
