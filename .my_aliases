@@ -24,7 +24,7 @@ alias postgres start="pg_ctl -D /usr/local/var/postgres start -s -m fast"
 alias postgres stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # --------------------------------------------------------------------------------
 
-# Git 
+# Git
 
 alias gl1="git log --graph --abbrev-commit --decorate --date=relative --all"
 alias gl2="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
@@ -35,3 +35,9 @@ alias gl2="git log --graph --abbrev-commit --decorate --date=relative --format=f
 
 alias memory="top -l 1 | grep PhysMem"
 alias cpu="top -l 1 | grep CPU"
+
+# --------------------------------------------------------------------------------
+
+alias cf-connect-dev="export CF_HOME=~/.cf-dev && cf api api.cf.dev-paas.bskyb.com --skip-ssl-validation && cf login"
+alias cf-connect-stage="export CF_HOME=~/.cf-stage && cf api api.cf.stage-paas.bskyb.com --skip-ssl-validation && cf login"
+alias cf-connect-prod="export CF_HOME=~/.cf-prod && cf api api.cf.paas.bskyb.com --skip-ssl-validation && cf login"
